@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+	setlocale(0, "");
+
+	int a, b, c;
+
+	cout << "Введите А, В, C : " << endl;
+
+	cin >> a >> b >> c;
+
+	cout << "Проверка истинности высказывания \nA < B < C : " << (a < b && b < c) << ". " << endl;
+
+	cout << endl;
+
+	system("pause");
+
+	return 0;
+
+}
