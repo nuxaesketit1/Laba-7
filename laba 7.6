@@ -1,24 +1,17 @@
 #include <iostream>
 using namespace std;
-
-int main() {
-setlocale(LC_ALL, "Russian");
-	int a,b,c;
-	cout << "a=";
-	cin >> a;
-	cout << "b=";
-	cin >> b;
-	cout << "c=";
-	cin >> c;
-	if ( c*c==a*a+b*b ) {
-		cout <<"Треугольник прямоугольный";
-	}
-	else if (a*a==b*b+c*c) {
-		cout <<"Треугольник прямоугольный";
-	}
-	else if ( b*b==c*c+a*a) {
-		cout <<"Треугольник прямоугольный";
-	}
-	else { cout << "Треугольник непрямоугольный"; }
-	return 0;
+int main()
+{
+    cout<<"Vvedite chisla"<<endl;
+    int a,b,c;
+      cin>>a>>b>>c;
+    a*=a;
+    b*=b;
+    c*=c;
+       if ((a+b==c)or(a+c==b)or(c+b==a)) {
+           cout<<"True"<<endl;
+       }
+       else {
+           cout<<"False"<<endl;
+       }
 }
